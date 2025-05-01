@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500" prefWidth="900" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adil.habits.controllers.LoginController">
+    
+    <Label layoutX="131.0" layoutY="340.0" text="MY HABITS">
+        <font>
+            <Font name="Verdana" size="32.0" />
+        </font>
+    </Label>
+
+    <ImageView fx:id="imageView" fitHeight="237.0" fitWidth="243.0" layoutX="100.0" layoutY="100.0">
+    
+      <image>
+         <Image url="@../images/icon01.png" />
+      </image>
+    </ImageView>
+
+    <TextField fx:id="tfUsernameLogin" layoutX="550.0" layoutY="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Username" />
+    
+    <PasswordField fx:id="pfPasswordLogin" layoutX="550.0" layoutY="235.0" prefHeight="25.0" prefWidth="200.0" promptText="Password" />
+
+    <Button layoutX="550.0" layoutY="275.0" onAction="#handleLogin" prefHeight="25.0" prefWidth="200.0" text="Log in" />
+
+    <Label layoutX="588.0" layoutY="330.0" text="Don't have an account?" />
+    
+    <Button layoutX="622.0" layoutY="347.0" onAction="#goToRegister" style="-fx-background-color: transparent; -fx-text-fill: blue; -fx-underline: true;" text="Sign up" />
+    
+   	<Label layoutX="550.0" layoutY="150.0" prefHeight="35.0" prefWidth="66.0" text="Login" AnchorPane.topAnchor="150.0">
+   	
+	<font>
+    	<Font size="24.0" />
+    </font>
+      
+	</Label>
+
+</AnchorPane>

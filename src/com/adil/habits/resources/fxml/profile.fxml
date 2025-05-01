@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="com.adil.habits.controllers.ProfileController">
+
+    <VBox layoutX="100" layoutY="50" spacing="10">
+    
+        <TextField text="Profile" />
+        
+        <TextField fx:id="kullaniciAdiLabel" text="Kullanıcı Adı:" />
+        
+        <TextField fx:id="soyisimLabel" text="Soyisim:" />
+        
+        <TextField fx:id="yasLabel" text="Yaş:" />
+        
+        <TextField fx:id="bioLabel" text="Bio:" />
+        
+        <Button onAction="#logout" text="Çıkış Yap" />
+        
+      <TextField />
+        
+    </VBox>
+    
+</AnchorPane>

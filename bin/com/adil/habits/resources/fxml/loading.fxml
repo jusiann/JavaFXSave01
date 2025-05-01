@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane style="-fx-background-color: #9999cc;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adil.habits.controllers.LoadingController">
+			
+   <AnchorPane prefHeight="400.0" prefWidth="600.0">
+   
+      <children>
+      
+      	<ProgressBar fx:id="pbLoading" layoutY="371.0" prefHeight="30" prefWidth="600.0" progress="0.7" stylesheets="@../css/application.css" />
+
+    	<ImageView fx:id="imageView" fitHeight="237.0" fitWidth="243.0" layoutX="179.0" layoutY="14.0" AnchorPane.rightAnchor="178.0" AnchorPane.topAnchor="14.0">
+    		
+      		<image>
+         		<Image url="@../images/icon01.png" />
+      		</image>
+      		
+      	</ImageView>
+      	
+      </children>
+      
+   </AnchorPane>
+   
+</StackPane>
