@@ -4,5 +4,11 @@
     "name": "Sport",
     "detail": "",
     "isCompleted": false
+  },
+  {
+    "className": "SleepingHabit",
+    "name": "Sleep",
+    "detail": "05:00 saat",
+    "isCompleted": false
   }
 ]

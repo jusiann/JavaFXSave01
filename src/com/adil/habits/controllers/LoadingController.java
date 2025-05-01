@@ -7,10 +7,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import javafx.scene.control.Label;
 
-import java.io.InputStream;
-
-import com.adil.habits.Main;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -26,7 +24,24 @@ public class LoadingController {
     private ImageView imageView;
 
     @FXML
+    private Label lblHint;
+    
+    private final String[] messages = {
+            "Bugün harika bir gün!",
+            "Alışkanlıklarını sen şekillendir.",
+            "Takip süper gidiyor!",
+            "Azimle devam et!",
+            "Küçük adımlar büyük farklar yaratır.",
+            "Süreklilik başarı getirir.",
+            "Bir adım daha ileri!"
+        };
+ 
+    @FXML
     public void initialize() {
+    	
+    	int randomIndex = (int)(Math.random() * messages.length);
+        lblHint.setText(messages[randomIndex]);
+        
     	
     	final double[] progress = {0};
     	Timeline timeLine = new Timeline();
